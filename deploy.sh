@@ -129,7 +129,7 @@ echo Install Flatten-packages
 echo ###########
 eval $NPM_CMD install flatten-packages
 exitWithMessageOnError "installing flatten-packages failed"
-node node_modules/flatten-packages/bin/flatten
+node ./node_modules/flatten-packages/bin/flatten .
 exitWithMessageOnError "flatten-packages failed"
 
 
